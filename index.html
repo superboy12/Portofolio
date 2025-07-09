@@ -2,7 +2,9 @@
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="viewport" content="width=1280">
+    
     <title>Daniel Ardiyansah - Web Developer Portfolio</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,23 +30,23 @@
             }
         }
     </script>
-</head>
-<style>
-    .swiper-button-next,
-    .swiper-button-prev {
-        color: #a78bfa !important; /* Warna ungu Tailwind 500 */
-    }
+    <style>
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #a78bfa !important;
+        }
 
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-        font-size: 1.5rem; /* Sesuaikan ukuran ikon jika perlu */
-        font-weight: bold;
-    }
-</style>
+        .swiper-button-next:after,
+        .swiper-button-prev:after {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
 <body class="bg-gray-900 text-white font-poppins">
 
     <header id="main-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
-        <div class="container mx-auto px-6 lg:px-12 py-4 flex justify-between items-center">
+        <div class="container mx-auto px-12 py-4 flex justify-between items-center">
             <a href="#beranda" class="text-xl font-bold tracking-wider">
                 Daniel A.
             </a>
@@ -58,23 +60,24 @@
             </nav>
         </div>
     </header>
+
     <section id="beranda" class="min-h-screen flex items-center">
-        <div class="container mx-auto px-6 lg:px-12">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
-                <div class="md:w-1/2 text-center md:text-left" data-aos="fade-right" data-aos-duration="1200">
+        <div class="container mx-auto px-12">
+            <div class="flex flex-row items-center justify-between gap-12">
+                <div class="w-1/2 text-left" data-aos="fade-right" data-aos-duration="1200">
                     <p class="text-lg font-semibold text-purple-400 tracking-widest">WELCOME TO MY PORTFOLIO</p>
-                    <h1 class="text-5xl lg:text-7xl font-extrabold my-4 leading-tight">
+                    <h1 class="text-7xl font-extrabold my-4 leading-tight">
                         Daniel Ardiyansah
                     </h1>
-                    <p class="text-lg text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
+                    <p class="text-lg text-gray-300 mb-8 max-w-lg mx-0">
                         Seorang mahasiswa Teknik Informatika dari Universitas Lampung yang memiliki antusiasme tinggi terhadap pengembangan web dan teknologi. Saya berfokus untuk mempelajari cara membangun solusi digital yang tidak hanya fungsional, tetapi juga memberikan pengalaman pengguna yang luar biasa.
                     </p>
                     <a href="assets/docs/cv-daniel-ardiyansah.pdf" download class="inline-block bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-purple-700 transition-all duration-300 shadow-lg shadow-purple-900/40">
                         <i class="fas fa-download mr-2"></i> Download My CV
                     </a>
                 </div>
-                <div class="md:w-1/2 flex justify-center md:justify-end" data-aos="fade-left" data-aos-duration="1200">
-                    <div class="relative w-64 h-64 lg:w-96 lg:h-96">
+                <div class="w-1/2 flex justify-end" data-aos="fade-left" data-aos-duration="1200">
+                    <div class="relative w-96 h-96">
                         <div class="absolute inset-0 bg-purple-500 rounded-full blur-2xl opacity-40"></div>
                         <img src="assets/images/foto-profil.jpg" alt="Foto Daniel Ardiyansah" class="relative w-full h-full object-cover rounded-full border-4 border-gray-700">
                     </div>
@@ -84,10 +87,10 @@
     </section>
 
     <section id="keahlian" class="py-20 bg-gray-800/50">
-        <div class="container mx-auto px-6 lg:px-12 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Keahlian Profesional</h2>
+        <div class="container mx-auto px-12 text-center">
+            <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Keahlian Profesional</h2>
             <div class="w-24 h-1 bg-purple-500 mx-auto mb-16" data-aos="fade-up"></div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
+            <div class="grid grid-cols-6 gap-8 max-w-6xl mx-auto">
                 <div class="bg-gray-800 p-6 rounded-xl flex flex-col items-center justify-center transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-900/50" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-html5 text-5xl text-purple-400 mb-4"></i><h3 class="font-semibold text-lg">HTML5</h3></div>
                 <div class="bg-gray-800 p-6 rounded-xl flex flex-col items-center justify-center transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-900/50" data-aos="fade-up" data-aos-delay="150"><i class="fab fa-css3-alt text-5xl text-purple-400 mb-4"></i><h3 class="font-semibold text-lg">CSS3</h3></div>
                 <div class="bg-gray-800 p-6 rounded-xl flex flex-col items-center justify-center transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-900/50" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-js-square text-5xl text-purple-400 mb-4"></i><h3 class="font-semibold text-lg">JavaScript</h3></div>
@@ -99,14 +102,14 @@
     </section>
 
     <section id="projek" class="py-20">
-        <div class="container mx-auto px-6 lg:px-12">
+        <div class="container mx-auto px-12">
             <div class="text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Projek Unggulan</h2>
+                <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Projek Unggulan</h2>
                 <div class="w-24 h-1 bg-purple-500 mx-auto mb-16" data-aos="fade-up"></div>
             </div>
             
-            <div class="flex flex-col lg:flex-row gap-10 items-center">
-                <div class="w-full lg:w-1/2" data-aos="fade-right">
+            <div class="flex flex-row gap-10 items-center">
+                <div class="w-1/2" data-aos="fade-right">
                     <div class="swiper project-swiper bg-gray-800 rounded-lg shadow-lg">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"><img src="assets/images/Laman_beranda.jpg" alt="Screenshot 1" class="w-full h-full object-cover"></div>
@@ -123,8 +126,7 @@
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
-
-                <div class="w-full lg:w-1/2" data-aos="fade-left" data-aos-delay="200">
+                <div class="w-1/2" data-aos="fade-left" data-aos-delay="200">
                     <h3 class="text-2xl font-bold mb-3 text-purple-400">Aplikasi Point of Sale & Inventori</h3>
                     <p class="text-gray-300 mb-6">
                         Sebuah sistem kasir dan manajemen barang berbasis web yang dirancang untuk membantu toko mengelola transaksi penjualan, stok barang, dan laporan secara efisien. Aplikasi ini memiliki antarmuka yang ramah pengguna dan fitur yang lengkap untuk operasional toko sehari-hari.
@@ -143,9 +145,10 @@
             </div>
         </div>
     </section>
+
     <section id="kontak" class="py-20 bg-gray-800/50">
-        <div class="container mx-auto px-6 lg:px-12 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Hubungi Saya</h2>
+        <div class="container mx-auto px-12 text-center">
+            <h2 class="text-4xl font-bold mb-4" data-aos="fade-up">Hubungi Saya</h2>
             <div class="w-24 h-1 bg-purple-500 mx-auto mb-12" data-aos="fade-up"></div>
             <p class="max-w-xl mx-auto text-gray-300 mb-8" data-aos="fade-up" data-aos-delay="100">Tertarik untuk berkolaborasi atau memiliki pertanyaan? Saya selalu terbuka untuk diskusi dan proyek baru.</p>
             <div class="flex justify-center items-center space-x-6 mt-12" data-aos="fade-up" data-aos-delay="300">
@@ -177,26 +180,19 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script>
         const swiper = new Swiper('.project-swiper', {
-            // Opsi Tambahan
-            loop: true, // Agar slider bisa berputar terus
+            loop: true,
             grabCursor: true,
-
-            // Paginasi (titik-titik di bawah)
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
-
-            // Tombol Navigasi (panah kiri-kanan)
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
         });
     </script>
-
 </body>
 </html>
