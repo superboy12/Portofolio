@@ -2,9 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Daniel Ardiyansah - Web Developer Portfolio</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,8 +13,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <script>
@@ -34,7 +33,7 @@
     <style>
         html { scroll-behavior: smooth; }
         body, header, section, footer, div, h1, h2, h3, p, a, span, i {
-            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
         .swiper-button-next, .swiper-button-prev { color: #a78bfa !important; }
         .swiper-button-next:after, .swiper-button-prev:after { font-size: 1.5rem; font-weight: bold; }
@@ -64,7 +63,7 @@
                 </button>
                 <div class="flex md:hidden">
                     <button id="hamburger-button" class="text-slate-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-white p-2">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                     </button>
                 </div>
             </div>
@@ -76,6 +75,7 @@
             <a href="#kontak" class="block py-2 px-4 text-sm text-slate-600 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-700">Kontak</a>
         </div>
     </header>
+
     <section id="beranda" class="min-h-screen flex items-center pt-20 md:pt-0">
         <div class="container mx-auto px-6 lg:px-12">
             <div class="flex flex-col md:flex-row items-center justify-between gap-12">
@@ -87,7 +87,7 @@
                     <p class="text-lg text-slate-600 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
                         Seorang mahasiswa Teknik Informatika dari Universitas Lampung yang memiliki antusiasme tinggi terhadap pengembangan web dan teknologi.
                     </p>
-                    <a href="assets/hehe.pdf" download class="inline-block bg-indigo-600 dark:bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 dark:hover:bg-purple-700 transition-all duration-300 shadow-lg shadow-indigo-500/50 dark:shadow-purple-900/40">
+                    <a href="assets/hehe.pdf" download class="inline-block bg-indigo-600 dark:bg-purple-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 dark:hover:bg-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl shadow-indigo-500/50 dark:shadow-purple-900/40">
                         <i class="fas fa-download mr-2"></i> Download My CV
                     </a>
                 </div>
@@ -105,13 +105,35 @@
         <div class="container mx-auto px-6 lg:px-12 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white" data-aos="fade-up">Keahlian Profesional</h2>
             <div class="w-24 h-1 bg-indigo-500 dark:bg-purple-500 mx-auto mb-16" data-aos="fade-up"></div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
-                <div class="bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl flex flex-col items-center justify-center hover:transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-html5 text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i><h3 class="font-semibold text-lg text-slate-700 dark:text-white">HTML5</h3></div>
-                <div class="bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl flex flex-col items-center justify-center hover:transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="150"><i class="fab fa-css3-alt text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i><h3 class="font-semibold text-lg text-slate-700 dark:text-white">CSS3</h3></div>
-                <div class="bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl flex flex-col items-center justify-center hover:transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-js-square text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i><h3 class="font-semibold text-lg text-slate-700 dark:text-white">JavaScript</h3></div>
-                <div class="bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl flex flex-col items-center justify-center hover:transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="250"><i class="fab fa-php text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i><h3 class="font-semibold text-lg text-slate-700 dark:text-white">PHP</h3></div>
-                <div class="bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl flex flex-col items-center justify-center hover:transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300"><i class="fas fa-database text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i><h3 class="font-semibold text-lg text-slate-700 dark:text-white">Database</h3></div>
-                <div class="bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl flex flex-col items-center justify-center hover:transform hover:-translate-y-2 hover:shadow-xl" data-aos="fade-up" data-aos-delay="350"><i class="fas fa-file-code text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i><h3 class="font-semibold text-lg text-slate-700 dark:text-white">SQL</h3></div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-8 max-w-7xl mx-auto">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" class="block bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] dark:hover:shadow-[0_0_25px_rgba(167,139,250,0.3)]" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fab fa-html5 text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i>
+                    <h3 class="font-semibold text-lg text-slate-700 dark:text-white">HTML5</h3>
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="block bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] dark:hover:shadow-[0_0_25px_rgba(167,139,250,0.3)]" data-aos="fade-up" data-aos-delay="150">
+                    <i class="fab fa-css3-alt text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i>
+                    <h3 class="font-semibold text-lg text-slate-700 dark:text-white">CSS3</h3>
+                </a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="block bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] dark:hover:shadow-[0_0_25px_rgba(167,139,250,0.3)]" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fab fa-js-square text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i>
+                    <h3 class="font-semibold text-lg text-slate-700 dark:text-white">JavaScript</h3>
+                </a>
+                <a href="https://www.php.net/" target="_blank" class="block bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] dark:hover:shadow-[0_0_25px_rgba(167,139,250,0.3)]" data-aos="fade-up" data-aos-delay="250">
+                    <i class="fab fa-php text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i>
+                    <h3 class="font-semibold text-lg text-slate-700 dark:text-white">PHP</h3>
+                </a>
+                 <a href="https://isocpp.org/" target="_blank" class="block bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] dark:hover:shadow-[0_0_25px_rgba(167,139,250,0.3)]" data-aos="fade-up" data-aos-delay="300">
+                    <i class="devicon-cplusplus-plain text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i>
+                    <h3 class="font-semibold text-lg text-slate-700 dark:text-white">C++</h3>
+                </a>
+                <a href="https://www.mysql.com/" target="_blank" class="block bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] dark:hover:shadow-[0_0_25px_rgba(167,139,250,0.3)]" data-aos="fade-up" data-aos-delay="350">
+                    <i class="fas fa-database text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i>
+                    <h3 class="font-semibold text-lg text-slate-700 dark:text-white">Database</h3>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" class="block bg-white dark:bg-gray-800 border border-slate-200 dark:border-gray-700 p-6 rounded-xl hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(99,102,241,0.4)] dark:hover:shadow-[0_0_25px_rgba(167,139,250,0.3)]" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-file-code text-5xl text-indigo-500 dark:text-purple-400 mb-4"></i>
+                    <h3 class="font-semibold text-lg text-slate-700 dark:text-white">SQL</h3>
+                </a>
             </div>
         </div>
     </section>
@@ -153,7 +175,6 @@
                     <div class="flex space-x-4"><a href="#" target="_blank" class="bg-indigo-600 dark:bg-purple-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-indigo-700 dark:hover:bg-purple-700">Live Demo</a><a href="https://github.com/superboy12" target="_blank" class="bg-slate-600 dark:bg-gray-600 text-white font-semibold py-2 px-6 rounded-md hover:bg-slate-700 dark:hover:bg-gray-700">Lihat Kode</a></div>
                 </div>
             </div>
-
             <div class="flex flex-col lg:flex-row-reverse gap-10 items-center mt-24">
                  <div class="w-full lg:w-1/2" data-aos="fade-left">
                     <div class="swiper project-swiper bg-slate-100 dark:bg-gray-800 rounded-lg shadow-lg border border-slate-200 dark:border-gray-700 h-[250px] md:h-[400px]">
@@ -203,17 +224,12 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        // Inisialisasi AOS
         AOS.init({ duration: 1000, once: true, offset: 50 });
-
-        // Inisialisasi semua slider
         const projectSwipers = new Swiper('.project-swiper', {
             loop: true, grabCursor: true,
             pagination: { el: '.swiper-pagination', clickable: true },
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
         });
-
-        // Script untuk Transisi Header
         const header = document.getElementById('main-header');
         window.addEventListener('scroll', function() {
             const isDarkMode = document.documentElement.classList.contains('dark');
@@ -223,8 +239,6 @@
                 header.classList.remove(isDarkMode ? 'bg-gray-900/90' : 'bg-white/90', 'backdrop-blur-sm', 'shadow-lg');
             }
         });
-
-        // Script untuk Theme Toggle
         const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
         const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
         const themeToggleBtn = document.getElementById('theme-toggle');
@@ -252,8 +266,6 @@
             localStorage.setItem('color-theme', isDarkMode ? 'light' : 'dark');
             applyTheme(!isDarkMode);
         });
-
-        // Script untuk Hamburger Menu
         const hamburgerButton = document.getElementById('hamburger-button');
         const mobileMenu = document.getElementById('mobile-menu');
         hamburgerButton.addEventListener('click', function() {
